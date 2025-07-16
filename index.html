@@ -1,245 +1,184 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<html lang="en">
 <head>
-	<title>Nifil Nasiya Wedding Invitation</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Meddon&family=Merienda:wght@300..900&display=swap"
-		rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Meddon&family=Merienda:wght@300..900&family=Pinyon+Script&display=swap"
-		rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Nifil & Nasiya Wedding Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wedding invitation for Nifil & Nasiya - August 9, 2025">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="images/Video.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="images/audio.mpeg" as="audio" type="audio/mpeg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/basmal.png" type="image/png">
 </head>
 
 <body class="is-preload">
-	<!-- Background Music -->
-	<script>
-		// Create audio context on page load
-		window.addEventListener('load', function () {
-			// Create audio element
-			const audio = new Audio('images/audio.mpeg');
-			audio.loop = true;
-
-			// Set properties to encourage autoplay
-			audio.autoplay = true;
-			audio.muted = false;
-			audio.volume = 1.0;
-
-			// Try multiple methods to start playing
-			const playAttempt = setInterval(() => {
-				audio.play()
-					.then(() => {
-						clearInterval(playAttempt);
-					})
-					.catch(e => {
-						console.log("Autoplay blocked. Retrying...");
-					});
-			}, 300);
-
-			// Attempt to resume audio on any user interaction
-			document.addEventListener('click', function () {
-				audio.play();
-			}, { once: true });
-
-			// Keep trying to play when tab becomes visible
-			document.addEventListener('visibilitychange', function () {
-				if (!document.hidden) {
-					audio.play();
-				}
-			});
-		});
-	</script>
-
-	<!-- Fallback audio element -->
-	<audio id="backgroundMusic" autoplay loop style="display: none">
-		<source src="images/audio.mpeg" type="audio/mpeg">
-
-	</audio>
-
-	<script>
-		window.addEventListener('DOMContentLoaded', () => {
-			const music = document.getElementById('backgroundMusic');
-			// Unmute after a delay
-			setTimeout(() => {
-				music.muted = false;
-				console.log('Unmuted audio:', music.muted);
-			}, 1000);
-		});
-	</script>
-
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<span class="icon newicon"></span>
-			</div>
-			<div class="content">
-				<div class="inner">
-
-					<p class="introduction">With hearts full of love and dreams in our eyes <br /> we joyfully announce
-						the beginning of a beautiful new chapter in our lives </p>
-					<h1 class="Shamimaroshan">Nifil & Nasiya</h1>
-					<span class="date">09&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;08&nbsp;-&nbsp;&nbsp;&nbsp;2025</span>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#intro">Invitation</a></li>
-					<li><a href="#work">Location</a></li>
-					<li><a href="#about">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- Main -->
-		<div id="main">
-
-  <!-- Invitation Section -->
-  <article id="intro" class="animated-section">
-    <div class="section-header">
-      <h2 class="major">Invitation</h2>
-      <div class="divider"></div>
+    <!-- Background Video -->
+    <div id="bg">
+        <video autoplay muted loop playsinline id="bg-video" class="video-bg">
+            <source src="images/Video.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <div class="invitation-container">
-      <div class="invitation-card">
-        <a href="images/invitation.png" target="_blank" rel="noopener noreferrer" class="invitation-link">
-          <div class="invitation-image-wrapper">
-            <img src="images/invitation.png" alt="Wedding Invitation" class="invitation-image" />
-            <div class="overlay">
-              <span class="view-text">Click to View Full Invitation</span>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <span class="icon newicon"></span>
             </div>
-          </div>
-        </a>
-        <div class="invitation-footer">
-          <p>We request the honor of your presence</p>
-          <div class="gold-line"></div>
+            <div class="content">
+                <div class="inner">
+                    <p class="introduction">With hearts full of love and dreams in our eyes <br>we joyfully announce the beginning of a beautiful new chapter in our lives</p>
+                    <h1 class="Shamimaroshan">Nifil & Nasiya</h1>
+                    <span class="date">09 - 08 - 2025</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Invitation</a></li>
+                    <li><a href="#work">Location</a></li>
+                    <li><a href="#about">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main">
+            <!-- Invitation Section -->
+            <article id="intro" class="animated-section">
+                <div class="section-header">
+                    <h2 class="major">Invitation</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="invitation-container">
+                    <div class="invitation-card">
+                        <a href="images/invitation.png" target="_blank" rel="noopener" class="invitation-link">
+                            <div class="invitation-image-wrapper">
+                                <img src="images/invitation.png" alt="Wedding Invitation" class="invitation-image" loading="lazy">
+                                <div class="overlay">
+                                    <span class="view-text">View Full Invitation</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="invitation-footer">
+                            <p>We request the honor of your presence</p>
+                            <div class="gold-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Location Section -->
+            <article id="work" class="animated-section">
+                <div class="section-header">
+                    <h2 class="major">Wedding Venue</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="venue-container">
+                    <div class="venue-card">
+                        <div class="venue-image-container">
+                            <img src="images/hall.jpg" alt="Glory Palace Auditorium" class="venue-image" loading="lazy">
+                            <div class="venue-badge">📍</div>
+                        </div>
+                        <div class="venue-details">
+                            <h3 class="venue-title">Glory Palace Auditorium</h3>
+                            <div class="venue-address">
+                                <p><i class="fas fa-map-marker-alt"></i> Moonupeedika, Thrissur</p>
+                                <p>Kerala, India</p>
+                            </div>
+                            <div class="map-container">
+                                <a href="https://maps.app.goo.gl/16z6DyRwUzPN5kSm6" target="_blank" rel="noopener" class="map-link">
+                                    <img src="images/map.png" alt="Venue Location" class="map-image" loading="lazy">
+                                    <div class="map-overlay">
+                                        <span>View on Google Maps</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="venue-note">
+                                <i class="fas fa-heart"></i>
+                                <p>Join us at this beautiful venue for an unforgettable celebration!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Contact Section -->
+            <article id="about" class="animated-section">
+                <div class="section-header">
+                    <h2 class="major">Contact Us</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-card-elegant">
+                        <div class="contact-header">
+                            <h3>For Any Inquiries</h3>
+                            <div class="contact-divider"></div>
+                        </div>
+                        <div class="contact-avatar-circle">
+                            <img src="https://via.placeholder.com/150" alt="Basheer" class="avatar-image" loading="lazy">
+                            <div class="avatar-border"></div>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Basheer</h4>
+                            <div class="contact-method">
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+919946167115" class="phone-link">+91 99461 67115</a>
+                            </div>
+                        </div>
+                        <div class="contact-note">
+                            <p>Please feel free to reach out for any questions</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
-      </div>
+
+        <!-- Footer -->
+        <footer id="footer"></footer>
     </div>
-  </article>
 
-  <!-- Location Section -->
-  <article id="work" class="animated-section">
-    <div class="section-header">
-      <h2 class="major">Wedding Venue</h2>
-      <div class="divider"></div>
-    </div>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop style="display:none">
+        <source src="images/audio.mpeg" type="audio/mpeg">
+    </audio>
 
-    <div class="venue-container">
-      <div class="venue-card">
-        <div class="venue-image-container">
-          <img src="images/hall.jpg" alt="Glory Palace Auditorium" class="venue-image" />
-          <div class="venue-badge">📍</div>
-        </div>
-        
-        <div class="venue-details">
-          <h3 class="venue-title">Glory Palace Auditorium</h3>
-          <div class="venue-address">
-            <p><i class="fas fa-map-marker-alt"></i> Moonupeedika, Thrissur</p>
-            <p>Kerala, India</p>
-          </div>
-          
-          <div class="map-container">
-            <a href="https://maps.app.goo.gl/16z6DyRwUzPN5kSm6" target="_blank" class="map-link">
-              <img src="images/map.png" alt="Venue Location" class="map-image" />
-              <div class="map-overlay">
-                <span>View on Google Maps</span>
-                <i class="fas fa-external-link-alt"></i>
-              </div>
-            </a>
-          </div>
-          
-          <div class="venue-note">
-            <i class="fas fa-heart"></i>
-            <p>Join us at this beautiful venue for an unforgettable celebration!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- Contact Section -->
-  <article id="about" class="animated-section">
-    <div class="section-header">
-      <h2 class="major">Contact Us</h2>
-      <div class="divider"></div>
-    </div>
-
-    <div class="contact-container">
-      <div class="contact-card-elegant">
-        <div class="contact-header">
-          <h3>For Any Inquiries</h3>
-          <div class="contact-divider"></div>
-        </div>
-        
-        <div class="contact-avatar-circle">
-          <img src="https://via.placeholder.com/150" alt="Basheer" class="avatar-image" />
-          <div class="avatar-border"></div>
-        </div>
-        
-        <div class="contact-info">
-          <h4>Basheer</h4>
-          
-          <div class="contact-method">
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+919946167115" class="phone-link">+91 99461 67115</a>
-          </div>
-          
-          
-        </div>
-        
-        <div class="contact-note">
-          <p>Please feel free to reach out for any questions</p>
-        </div>
-      </div>
-    </div>
-  </article>
-
-</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-		</footer>
-
-	</div>
-
-	<!-- BG -->
-	<div id="bg">
-		<video autoplay muted loop playsinline id="bg-video" class="video-bg">
-			<source src="images/Video.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video>
-	</div>
-
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    <!-- Scripts -->
+    <script>
+        // Music handling
+        document.addEventListener('DOMContentLoaded', () => {
+            const music = document.getElementById('backgroundMusic');
+            
+            // Attempt to play music on user interaction
+            const playMusic = () => {
+                music.volume = 0.5;
+                music.play().catch(e => console.log("Autoplay blocked:", e));
+                document.removeEventListener('click', playMusic);
+                document.removeEventListener('scroll', playMusic);
+            };
+            
+            document.addEventListener('click', playMusic, { once: true });
+            document.addEventListener('scroll', playMusic, { once: true, passive: true });
+        });
+    </script>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
